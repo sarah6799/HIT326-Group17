@@ -21,10 +21,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop</a>
+                <a class="nav-link" href="shop.php">Shop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Cart & Track</a>
@@ -34,7 +34,7 @@
               </li>
             </ul>
             <form class="d-flex">
-              <a href="login.html" class="button">log in/sign up</a>
+              <a href="login.php" class="button">log in/sign up</a>
             </form>
           </div>
         </div>
