@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.button{
+    background-color:rgba(178, 172, 172, 0.538);
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.navbar{
+    font-size: 17px;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    border: 0.7;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color:black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
+    color:rgb(225, 69, 12);
+}
+
+.navbar i{
+    font-size:1.2rem;
+    padding: 0.7em;
+    font-weight: 600;
+    transition: 0.4 ease;
+}
+
+.col{
+  float: left;
+  width: 33.33%; 
+  padding: 20px;
+}
+
+.card{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+  
+.card:hover {
+    border: 1px solid #777;
+}
+
+
+.top-product{
+    margin: 15px;
+    border: 1px solid #ccc;
+    float:initial;
+}
+
+.p-header{
+    background-color:rgba(178, 172, 172, 0.538);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.p-body{
+    text-align: center;
+    padding: 5px;
+}
+
+.cards{
+    margin:25px;
+}
+
+.Items{
+    margin: 10px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    position: relative;
+    text-align: center;
+}
+  
+.Items:hover{
+    border: 1px solid #777;
+}
+
+
+.Items.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.add:link{
+    color:cornflowerblue;
+}
+
+.add:hover{
+    color:brown;
+}
+
+.form_group{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.submit_btn{
+    width: 80%;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
