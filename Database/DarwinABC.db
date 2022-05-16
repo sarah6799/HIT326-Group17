@@ -1,4 +1,4 @@
-create database DarwinABC.db
+create database DarwinABC_db
 
 create table categories (
     categories_id int(100) NOT NULL,
