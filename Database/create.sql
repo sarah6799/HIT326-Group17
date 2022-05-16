@@ -1,5 +1,4 @@
 create database DarwinABC_db; 
-use  DarwinABC_db;
 
 create table Customer (
     CustEmail varchar(100) NOT NULL,
