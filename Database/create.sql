@@ -5,7 +5,7 @@ create table Customer (
     CustFName varchar(100) NOT NULL,
     CustLName varchar(100) NOT NULL,
     Title text,
-    Address varchar(100) NOT NULL,
+    Address varchar(255) NOT NULL,
     City varchar(100) NOT NULL,
     State varchar(100) NOT NULL,
     Country varchar(100) NOT NULL,
@@ -15,7 +15,7 @@ create table Customer (
 )ENGINE=InnoDB, DEFAULT CHARACTER SET utf8;
 
 create table Purchase (
-    PurchaseNo integer(100) NOT NULL UNIQUE,
+    PurchaseNo integer(255) NOT NULL UNIQUE,
     CustEmail varchar(100) NOT NULL,
     Date DEFAULT GETDATE(),
     CONSTRAINT PK_Purchase PRIMARY KEY (PurchaseNo),
@@ -23,18 +23,18 @@ create table Purchase (
 )ENGINE=InnoDB, DEFAULT CHARACTER SET utf8;
 
 create table PurchaseItem (
-    ItemNo integer(100) NOT NULL UNIQUE,
-    Quantity varchar(100),
-    PurchaseNo integer(100) NOT NULL UNIQUE,
-    ProductNo integer(100) NOT NULL UNIQUE,
+    ItemNo integer(255) NOT NULL UNIQUE,
+    Quantity varchar(255),
+    PurchaseNo integer(255) NOT NULL UNIQUE,
+    ProductNo integer(255) NOT NULL UNIQUE,
     CONSTRAINT PK_Purchase PRIMARY KEY (ItemNo),
     CONSTRAINT FK_Purchase FOREIGN KEY (PurchaseNo),
     CONSTRAINT FK_Purchase FOREIGN KEY (ProductNo)
 )ENGINE=InnoDB, DEFAULT CHARACTER SET utf8;
 
 create table Product (
-    ProductNo integer(100) NOT NULL UNIQUE,
-    Description text(100),
+    ProductNo integer(255) NOT NULL UNIQUE,
+    Description text(255),
     Price integer(100) Not NULL,
     Category varchar(100) Not NULL,
     Color text(100),
